@@ -1,0 +1,178 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N -1 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     prfPeriodoTx
+Instances:    50355
+Attributes:   13
+              BR
+              CondPista
+              RestrVisibili
+              TipoAcident
+              CausaAcident
+              TracadoVia
+              TipoAuto
+              Gravidade
+              DiaDaSemana
+              KMArredondado
+              Delegacia
+              probAcident
+              Periodo
+Test mode:    user supplied test set: 33587 instances
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters selected by cross validation: 4
+Number of iterations performed: 7
+
+
+                                    Cluster
+Attribute                                 0          1          2          3
+                                     (0.14)     (0.09)     (0.27)      (0.5)
+=============================================================================
+BR
+  mean                              211.6958   242.2474        101   246.1723
+  std. dev.                          47.2267    27.5068          0   142.3807
+
+CondPista
+  Seca                               6367.77  4091.7257 13672.3217 16269.1826
+  Com buraco                          3.2937    36.3371          1  1245.3692
+  Molhada                           600.8886   245.2951          1  5964.8163
+  Em obra                             2.1493    52.0382          1   834.8126
+  Outra                               1.8413    25.7409          1   201.4177
+  Escorregadia                        1.9407    10.3273          1    458.732
+  Oleosa                              1.3108     6.6785          1    43.0106
+  Enlameada                           1.1518     1.0003          1    50.8479
+  Com material granulado              1.1893    11.1166          1   174.6942
+  Com Gelo                            1.1154     1.0002          1     6.8843
+  [total]                          6982.6509  4481.2599 13681.3217 25249.7675
+RestrVisibili
+  Inexistente                      6955.1839   4126.213 13672.3217 21704.2815
+  Outros                             10.9223   102.5627          1   1453.515
+  Veículo estacionado                 2.2597    16.0559          1   132.6844
+  Configuração do terreno              2.523     112.94          1   1194.537
+  Poeira/fumaça/neblina               1.8661     15.983          1   210.1508
+  Vegetação                           2.2335     4.1264          1    56.6401
+  Ofuscamento                         3.5574    98.2363          1   432.2064
+  Cartazes/faixas                     1.4127     1.0001          1    19.5873
+  Placas                              1.6924     3.1425          1    45.1651
+  [total]                          6981.6509  4480.2599 13680.3217 25248.7675
+TipoAcident
+  Colisão Transversal               300.6223    524.133  1116.8116  2638.4332
+  Colisão com objeto fixo           395.6267    94.1974    267.133   942.0429
+  Atropelamento de pessoa           447.8737   152.3974   590.6689   518.0599
+  Colisão lateral                   999.3174   583.5599  4195.2001  5197.9225
+  Colisão traseira                 3013.6053   619.7777  5275.9491  6255.6679
+  QuedaMoto/bicla                   201.4442   157.6482   402.9929   856.9147
+  Colisão com bicicleta              53.0504    49.9618   208.9846   279.0032
+  Capotamento                       381.7975   361.9204   316.7472   1762.535
+  Atropelamento de animal           153.7777    587.758   132.9796   925.4847
+  Colisão frontal                   152.5712   409.7865    242.188  1378.4543
+  Saída de Pista                    669.7329   706.9217   592.6556  3277.6898
+  Colisão com objeto móvel           44.7641    33.0959    79.9982   131.1418
+  Tombamento                         98.3624   160.9581   143.0146   890.6648
+  Derramamento de Carga               8.8177    11.4093    23.9999     51.773
+  Danos Eventuais                      33.14     9.9291    60.9998    77.9311
+  Incêndio                           34.1474    23.8057    36.9985    72.0484
+  [total]                          6988.6509  4487.2599 13687.3217 25255.7675
+CausaAcident
+  Outras                           1902.5782  1001.9018  3097.6988  6821.8212
+  Falta de atenção                 2508.8867  1164.7155  6729.2423  8459.1554
+  Velocidade incompatível           257.5741   114.4911   290.3651  1202.5697
+  Ultrapassagem indevida             80.1116   249.3466   203.5109   698.0309
+  Desobediência à sinalização       114.4282   203.5301   431.9477   1185.094
+  Defeito mecânico                   374.911   250.8212   368.8518    986.416
+  Animais na Pista                  204.3335   792.0749   164.0352  1250.5563
+  Não guardar distância segura      936.2079   132.3931  1568.4184  1826.9806
+  Dormindo                          245.7167   143.4046   175.9467    562.932
+  Defeito na via                      55.043    64.9541   274.8279   1040.175
+  Ingestão de álcool                  303.86   364.6268   377.4769  1217.0363
+  [total]                          6983.6509  4482.2599 13682.3217 25250.7675
+TracadoVia
+  Reta                             6769.9023  3915.5087 13672.3217 16531.2673
+  Curva                             204.6358   461.1853          1  6968.1789
+  Cruzamento                          1.1128    97.5659          1  1743.3213
+  [total]                          6975.6509  4474.2599 13674.3217 25242.7675
+TipoAuto
+  Automóvel                        2282.5142  1186.3559  2709.1513  6723.9786
+  Não Informado                       1.8742     1.1258          2          1
+  Não se Aplica                     463.0416   160.7508    575.665   554.5427
+  Motocicletas                     1046.4289  1001.4066  2201.7604  4905.4041
+  Caminhão-Trator                   381.4654   358.7472  2195.1769  2392.6105
+  Camioneta                         386.9419     171.62   758.4725  1237.9655
+  Caminhão                          631.5585   597.4832  1806.1298  3121.8285
+  Bicicleta                           32.772    14.2398    91.9966   119.9915
+  Caminhonete                       786.9327   515.6676   991.6567   2480.743
+  Ônibus                             286.829   120.6273  1181.7651  1336.7786
+  Microônibus                       107.3726    79.3994   165.4111   542.8168
+  Não identificado                  371.4337   104.7352   699.2711     941.56
+  Motoneta                           87.0256    80.6668    96.9855   423.3221
+  Trator de rodas                     7.1252     8.5087    16.9637    29.4023
+  Triciclo                            1.2813          3          5     5.7187
+  Carroça                             3.2231     7.9902         10    32.7867
+  Caminhão-Tanque                     3.0946     5.7218          4    13.1836
+  Semi-Reboque                        5.4043     5.0199    21.9266    27.6492
+  Utilitário                         83.9681    35.4413    80.9897   221.6009
+  Ciclomotor                         20.1437    31.2051    67.9997   126.6515
+  Charrete                             1.105     1.9781          1     4.9169
+  Carro-de-mao                             1          1          2          1
+  Quadriciclo                         1.9999     1.0001          2          1
+  Trator misto                        1.4742     1.5267          2     1.9992
+  Reboque                              1.641     1.0424          6    16.3165
+  Trator de esteiras                       1          1          2          1
+  [total]                          6998.6509  4497.2599 13697.3217 25265.7675
+Gravidade
+  mean                                0.6024     0.7782     0.6934     0.6804
+  std. dev.                           0.4894     0.4154     0.4611     0.4663
+
+DiaDaSemana
+  Terça-feira                       896.3021   574.8453  1999.5023  3437.3502
+  Domingo                          1065.4141   727.0211  1260.9658   3599.599
+  Quarta-feira                      845.2806   583.3313  2153.8239  3277.5642
+  Sábado                           1010.1177    714.226   1698.298  3637.3582
+  Segunda-feira                    1223.3592   599.6627  2172.6345  3829.3436
+  Sexta-feira                      1079.4796   646.9392  2334.2194  3897.3618
+  Quinta-feira                      859.6976   632.2342  2058.8778  3568.1904
+  [total]                          6979.6509  4478.2599 13678.3217 25246.7675
+KMArredondado
+  mean                               60.1562   328.2495    68.2093    85.2175
+  std. dev.                          47.6046   115.3861    26.2301    47.6515
+
+Delegacia
+  1101.0                           5018.9735    17.2211 13670.8012 12124.0043
+  1102.0                           1951.9724   663.3807          1  4158.6469
+  1105.0                               4.208   924.9805          1  1685.8115
+  1103.0                              1.0307  1402.9014          1  3110.0678
+  1106.0                              1.0004          1          1  4146.9996
+  1104.0                              1.0002  1465.9868          1      1.013
+  NA                                  1.4657     2.7894     2.5205    20.2243
+  [total]                          6979.6509  4478.2599 13678.3217 25246.7675
+probAcident
+  mean                                0.1404     0.1125      0.261      0.019
+  std. dev.                           0.0487     0.0705     0.1066     0.0163
+
+Periodo
+  Noite                            1614.9998  1513.4305   2911.283  6782.2867
+  Manhã                            2445.5668  1203.7955  5348.0553  8456.5824
+  Madrugada                         387.2179   455.0959   470.8034  1762.8827
+  Tarde                            2528.8664  1302.9379    4945.18  8242.0156
+  [total]                          6976.6509  4475.2599 13675.3217 25243.7675
+
+
+Time taken to build model (full training data) : 985.01 seconds
+
+=== Evaluation on test set ===
+Clustered Instances
+
+0       3696 ( 11%)
+1       2735 (  8%)
+2      14163 ( 42%)
+3      12993 ( 39%)
+
+
+Log likelihood: -16.71613
+
